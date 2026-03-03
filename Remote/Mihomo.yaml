@@ -91,6 +91,8 @@ dns:
       - '+.google.com'
       - '+.facebook.com'
       - '+.youtube.com'
+      - '+.msftconnecttest.com'
+      - '+.msftncsi.com'
   nameserver-policy:
     "rule-set:geosite-cn":
       - "https://dns.alidns.com/dns-query"
@@ -99,6 +101,12 @@ dns:
       - "https://dns.google/dns-query"
       - "https://dns.cloudflare.com/dns-query"
     "rule-set:geosite-category-ads-all": rcode://success
+    '+.msftconnecttest.com':
+      - 223.5.5.5
+      - 119.29.29.29
+    '+.msftncsi.com':
+      - 223.5.5.5
+      - 119.29.29.29
 
 proxy-groups:
   - {
@@ -183,6 +191,14 @@ rules:
   - IP-CIDR,10.0.0.0/8,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
   - IP-CIDR,172.16.0.0/12,DIRECT
+  - DOMAIN-SUFFIX,msftconnecttest.com,DIRECT
+  - DOMAIN-SUFFIX,msftncsi.com,DIRECT
+  - PROCESS-NAME,xunyou.exe,DIRECT
+  - PROCESS-NAME,XYRepair.exe,DIRECT
+  - PROCESS-NAME,XYProtectService.exe,DIRECT
+  - PROCESS-NAME,XYServiceLink.exe,DIRECT
+  - PROCESS-NAME,xunyouwebhelper.exe,DIRECT
+  - IP-CIDR,172.27.0.0/16,DIRECT
   - DOMAIN-SUFFIX,localhost,DIRECT
   - DOMAIN-SUFFIX,googleapis.cn,🚀 节点选择
   - RULE-SET,geosite-category-ads-all,REJECT
