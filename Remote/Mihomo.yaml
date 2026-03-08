@@ -97,7 +97,13 @@ dns:
     "rule-set:geosite-cn":
       - "https://dns.alidns.com/dns-query"
       - "https://doh.pub/dns-query"
+    "rule-set:direct":
+      - "https://dns.alidns.com/dns-query"
+      - "https://doh.pub/dns-query"
     "rule-set:geosite-geolocation-!cn":
+      - "https://dns.google/dns-query"
+      - "https://dns.cloudflare.com/dns-query"
+    "rule-set:proxy":
       - "https://dns.google/dns-query"
       - "https://dns.cloudflare.com/dns-query"
     "rule-set:geosite-category-ads-all": rcode://success
@@ -198,13 +204,24 @@ rules:
   - PROCESS-NAME,XYProtectService.exe,DIRECT
   - PROCESS-NAME,XYServiceLink.exe,DIRECT
   - PROCESS-NAME,xunyouwebhelper.exe,DIRECT
+  - PROCESS-NAME,LeagueofLegends.exe,DIRECT
+  - PROCESS-NAME,LeagueClient.exe,DIRECT
+  - PROCESS-NAME,WeGame.exe,DIRECT
+  - PROCESS-NAME,TenProtect.exe,DIRECT
+  - DOMAIN-SUFFIX,qq.com,DIRECT
+  - DOMAIN-SUFFIX,tencent.com,DIRECT
+  - DOMAIN-SUFFIX,wegame.com.cn,DIRECT
+  - DOMAIN-SUFFIX,leagueoflegends.com,DIRECT
+  - DOMAIN-SUFFIX,riotgames.com,DIRECT
   - IP-CIDR,172.27.0.0/16,DIRECT
   - DOMAIN-SUFFIX,localhost,DIRECT
   - DOMAIN-SUFFIX,googleapis.cn,🚀 节点选择
   - RULE-SET,geosite-category-ads-all,REJECT
+  - RULE-SET,direct,DIRECT
   - RULE-SET,geosite-cn,DIRECT
   - RULE-SET,geoip-cn,DIRECT
   - RULE-SET,geosite-geolocation-!cn,🚀 节点选择
+  - RULE-SET,proxy,🚀 节点选择
   - MATCH,🚀 节点选择
 
 rule-providers:
