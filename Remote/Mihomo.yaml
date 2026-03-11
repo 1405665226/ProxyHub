@@ -208,6 +208,18 @@ rules:
   - PROCESS-NAME,LeagueClient.exe,DIRECT
   - PROCESS-NAME,WeGame.exe,DIRECT
   - PROCESS-NAME,TenProtect.exe,DIRECT
+  - PROCESS-NAME,steam.exe,DIRECT
+  - PROCESS-NAME,steamerrorreporter.exe,DIRECT
+  - PROCESS-NAME,steamerrorreporter64.exe,DIRECT
+  - PROCESS-NAME,streaming_client.exe,DIRECT
+  - PROCESS-NAME,SteamService.exe,DIRECT
+  - PROCESS-NAME,steamwebhelper.exe,DIRECT
+  - DOMAIN-SUFFIX,steampowered.com,🚀 节点选择
+  - DOMAIN-SUFFIX,steamcommunity.com,🚀 节点选择
+  - DOMAIN-SUFFIX,steamstatic.com,DIRECT
+  - DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,DIRECT
+  - DOMAIN-SUFFIX,steamcontent.com,DIRECT
+  - DOMAIN-SUFFIX,steamserver.net,DIRECT
   - DOMAIN-SUFFIX,qq.com,DIRECT
   - DOMAIN-SUFFIX,tencent.com,DIRECT
   - DOMAIN-SUFFIX,wegame.com.cn,DIRECT
