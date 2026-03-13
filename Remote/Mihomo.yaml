@@ -8,7 +8,7 @@ tcp-concurrent: true
 
 external-controller: "127.0.0.1:9090"
 external-ui: ui
-external-ui-url: "https://ghfast.top/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
+external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
 
 find-process-mode: strict
 global-client-fingerprint: chrome
@@ -231,13 +231,13 @@ rule-providers:
     type: http
     behavior: domain
     interval: 86400
-    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ads-all.mrs"
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ads-all.mrs"
     format: mrs
   geosite-cn:
     type: http
     behavior: domain
     interval: 86400
-    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"
     format: mrs
   direct:
     type: http
@@ -248,13 +248,13 @@ rule-providers:
     type: http
     behavior: ipcidr
     interval: 86400
-    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs"
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs"
     format: mrs
   geosite-geolocation-!cn:
     type: http
     behavior: domain
     interval: 86400
-    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs"
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs"
     format: mrs
   proxy:
     type: http
