@@ -201,7 +201,6 @@ rules:
   - DOMAIN-SUFFIX,msftconnecttest.com,DIRECT
   - DOMAIN-SUFFIX,msftncsi.com,DIRECT
   - DOMAIN-SUFFIX,ts.net,DIRECT
-  - PROCESS-NAME,tailscaled,DIRECT
   - PROCESS-NAME,xunyou.exe,DIRECT
   - PROCESS-NAME,XYRepair.exe,DIRECT
   - PROCESS-NAME,XYProtectService.exe,DIRECT
