@@ -1,5 +1,6 @@
 https://raw.githubusercontent.com/Keywos/rule/main/rename.js
 
+    name=
     out=clear
 
 https://raw.githubusercontent.com/xream/scripts/main/surge/modules/sub-store-scripts/sing-box/template.js
