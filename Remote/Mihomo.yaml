@@ -122,15 +122,15 @@ proxy-groups:
   - {
       name: 🎯 自动选择,
       type: select,
-      proxies: [🌏 全部节点, 🇭🇰 香港, 🇺🇸 美国, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇳 台湾]
+      proxies: [🌏 全部节点 Auto, 🇭🇰 香港 Auto, 🇺🇸 美国 Auto, 🇯🇵 日本 Auto, 🇰🇷 韩国 Auto, 🇸🇬 新加坡 Auto, 🇨🇳 台湾 Auto, Others Auto]
     }
   - {
       name: 👆🏻 手动选择,
       type: select,
-      include-all: true
+      proxies: [🌏 全部节点, 🇭🇰 香港, 🇺🇸 美国, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇳 台湾, Others]
     }
   - {
-      name: 🌏 全部节点,
+      name: 🌏 全部节点 Auto,
       type: url-test,
       url: https://www.gstatic.com/generate_204,
       interval: 300,
@@ -138,7 +138,12 @@ proxy-groups:
       include-all: true
     }
   - {
-      name: 🇭🇰 香港,
+      name: 🌏 全部节点,
+      type: select,
+      include-all: true
+    }
+  - {
+      name: 🇭🇰 香港 Auto,
       type: url-test,
       url: https://www.gstatic.com/generate_204,
       interval: 300,
@@ -147,7 +152,13 @@ proxy-groups:
       filter: "香港"
     }
   - {
-      name: 🇺🇸 美国,
+      name: 🇭🇰 香港,
+      type: select,
+      include-all: true,
+      filter: "香港"
+    }
+  - {
+      name: 🇺🇸 美国 Auto,
       type: url-test,
       url: https://www.gstatic.com/generate_204,
       interval: 300,
@@ -156,7 +167,13 @@ proxy-groups:
       filter: "美国"
     }
   - {
-      name: 🇯🇵 日本,
+      name: 🇺🇸 美国,
+      type: select,
+      include-all: true,
+      filter: "美国"
+    }
+  - {
+      name: 🇯🇵 日本 Auto,
       type: url-test,
       url: https://www.gstatic.com/generate_204,
       interval: 300,
@@ -165,7 +182,13 @@ proxy-groups:
       filter: "日本"
     }
   - {
-      name: 🇰🇷 韩国,
+      name: 🇯🇵 日本,
+      type: select,
+      include-all: true,
+      filter: "日本"
+    }
+  - {
+      name: 🇰🇷 韩国 Auto,
       type: url-test,
       url: https://www.gstatic.com/generate_204,
       interval: 300,
@@ -174,7 +197,13 @@ proxy-groups:
       filter: "韩国"
     }
   - {
-      name: 🇸🇬 新加坡,
+      name: 🇰🇷 韩国,
+      type: select,
+      include-all: true,
+      filter: "韩国"
+    }
+  - {
+      name: 🇸🇬 新加坡 Auto,
       type: url-test,
       url: https://www.gstatic.com/generate_204,
       interval: 300,
@@ -183,13 +212,40 @@ proxy-groups:
       filter: "新加坡"
     }
   - {
-      name: 🇨🇳 台湾,
+      name: 🇸🇬 新加坡,
+      type: select,
+      include-all: true,
+      filter: "新加坡"
+    }
+  - {
+      name: 🇨🇳 台湾 Auto,
       type: url-test,
       url: https://www.gstatic.com/generate_204,
       interval: 300,
       tolerance: 50,
       include-all: true,
       filter: "台湾"
+    }
+  - {
+      name: 🇨🇳 台湾,
+      type: select,
+      include-all: true,
+      filter: "台湾"
+    }
+  - {
+      name: Others Auto,
+      type: url-test,
+      url: https://www.gstatic.com/generate_204,
+      interval: 300,
+      tolerance: 50,
+      include-all: true,
+      filter: "(?i)^(?!.*(?:香港|台湾|日本|新加坡|美国|韩国)).*"
+    }
+  - {
+      name: Others,
+      type: select,
+      include-all: true,
+      filter: "(?i)^(?!.*(?:香港|台湾|日本|新加坡|美国|韩国)).*"
     }
 
 rules:
