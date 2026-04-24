@@ -239,7 +239,7 @@ proxy-groups:
       interval: 300,
       tolerance: 50,
       include-all: true,
-      filter: "(?i)^(?!.*(?:香港|台湾|日本|新加坡|美国|韩国)).*"
+      filter: "(?i)^(?!.*(?:香港|美国|日本|韩国|新加坡|台湾)).*"
     }
   - {
       name: Others,
