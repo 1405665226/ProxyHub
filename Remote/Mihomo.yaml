@@ -122,25 +122,12 @@ proxy-groups:
   - {
       name: 🎯 自动选择,
       type: select,
-      proxies: [🌏 全部节点 Auto, 🇭🇰 香港 Auto, 🇺🇸 美国 Auto, 🇯🇵 日本 Auto, 🇰🇷 韩国 Auto, 🇸🇬 新加坡 Auto, 🇨🇳 台湾 Auto, Others Auto]
+      proxies: [🇭🇰 香港 Auto, 🇺🇸 美国 Auto, 🇯🇵 日本 Auto, 🇰🇷 韩国 Auto, 🇸🇬 新加坡 Auto, 🇨🇳 台湾 Auto, Others Auto]
     }
   - {
       name: 👆🏻 手动选择,
       type: select,
-      proxies: [🌏 全部节点, 🇭🇰 香港, 🇺🇸 美国, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇳 台湾, Others]
-    }
-  - {
-      name: 🌏 全部节点 Auto,
-      type: url-test,
-      url: https://www.gstatic.com/generate_204,
-      interval: 300,
-      tolerance: 50,
-      include-all: true
-    }
-  - {
-      name: 🌏 全部节点,
-      type: select,
-      include-all: true
+      proxies: [🇭🇰 香港, 🇺🇸 美国, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇳 台湾, Others]
     }
   - {
       name: 🇭🇰 香港 Auto,
