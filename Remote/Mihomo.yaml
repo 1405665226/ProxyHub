@@ -212,6 +212,11 @@ rules:
   - PROCESS-NAME,streaming_client.exe,DIRECT
   - PROCESS-NAME,SteamService.exe,DIRECT
   - PROCESS-NAME,steamwebhelper.exe,DIRECT
+  - PROCESS-NAME,forzahorizon6.exe,DIRECT
+  - PROCESS-NAME,forzaprotocolselector.exe,DIRECT
+  - PROCESS-NAME,bf6.exe,DIRECT
+  - PROCESS-NAME,EAAntiCheat.GameServiceLauncher.exe,DIRECT
+  - PROCESS-NAME,EAAntiCheat.Installer.exe,DIRECT
   - DOMAIN-SUFFIX,steampowered.com,🚀 节点选择
   - DOMAIN-SUFFIX,steamcommunity.com,🚀 节点选择
   - DOMAIN-SUFFIX,steamstatic.com,DIRECT
