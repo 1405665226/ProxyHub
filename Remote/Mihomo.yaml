@@ -127,9 +127,8 @@ proxy-groups:
   - {
       name: 🎮 游戏,
       type: select,
-      proxies: [🎯 自动选择, 👆🏻 手动选择, DIRECT]
+      proxies: [🇭🇰 香港, 🇺🇸 美国, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇳 台湾, 其它, DIRECT]
     }
-
   - {
       name: 🇭🇰 香港,
       type: select,
