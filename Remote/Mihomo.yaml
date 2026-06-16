@@ -72,6 +72,8 @@ dns:
     - "+.steamserver.net"
     - "+.steamcontent.com"
     - "+.steamcommunity.com"
+    - "+.steampowered.com"
+    - "+.steamstatic.com"
   default-nameserver:
     - "223.5.5.5"
     - "119.29.29.29"
@@ -201,6 +203,9 @@ rules:
   - IP-CIDR,172.16.0.0/12,DIRECT
   - IP-CIDR,100.64.0.0/10,DIRECT
   - IP-CIDR,192.168.1.0/24,DIRECT
+  - DOMAIN-SUFFIX,msftconnecttest.com,DIRECT
+  - DOMAIN-SUFFIX,msftncsi.com,DIRECT
+  - DOMAIN-SUFFIX,ts.net,DIRECT
   - DOMAIN-SUFFIX,localhost,DIRECT
   - DOMAIN-SUFFIX,googleapis.cn,🚀 节点选择
   - RULE-SET,geosite-category-ads-all,REJECT
