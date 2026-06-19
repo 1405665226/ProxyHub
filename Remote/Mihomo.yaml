@@ -240,6 +240,8 @@ rules:
   - DOMAIN-SUFFIX,msftncsi.com,DIRECT
   - DOMAIN-SUFFIX,ts.net,DIRECT
   - DOMAIN-KEYWORD,steam,🎮 游戏
+  - DOMAIN-KEYWORD,xbox,🎮 游戏
+  - DOMAIN-KEYWORD,nvidia,DIRECT
   - DOMAIN-SUFFIX,localhost,DIRECT
   - DOMAIN-SUFFIX,googleapis.cn,🚀 节点选择
   - RULE-SET,geosite-category-ads-all,REJECT
