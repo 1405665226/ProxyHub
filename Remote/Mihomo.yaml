@@ -100,13 +100,7 @@ dns:
     "rule-set:geosite-cn":
       - "https://dns.alidns.com/dns-query"
       - "https://doh.pub/dns-query"
-    "rule-set:direct":
-      - "https://dns.alidns.com/dns-query"
-      - "https://doh.pub/dns-query"
     "rule-set:geosite-geolocation-!cn":
-      - "https://dns.google/dns-query"
-      - "https://dns.cloudflare.com/dns-query"
-    "rule-set:proxy":
       - "https://dns.google/dns-query"
       - "https://dns.cloudflare.com/dns-query"
     "rule-set:geosite-category-ads-all": rcode://success
