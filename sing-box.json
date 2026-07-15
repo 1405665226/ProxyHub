@@ -81,6 +81,7 @@
         "server": "fakeip"
       }
     ],
+    "independent_cache": true,
     "final": "Google",
     "strategy": "prefer_ipv4"
   },
