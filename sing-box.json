@@ -21,11 +21,19 @@
   "dns": {
     "servers": [
       {
+        "tag": "hosts",
+        "type": "hosts",
+        "predefined": {
+          "dns.alidns.com": ["223.5.5.5", "119.29.29.29"],
+          "dns.google": ["8.8.8.8", "1.1.1.1"]
+        }
+      },
+      {
         "tag": "Google",
         "type": "https",
         "server": "dns.google",
         "path": "/dns-query",
-        "domain_resolver": "bootstrap",
+        "domain_resolver": "hosts",
         "detour": "🚀 节点选择"
       },
       {
@@ -33,12 +41,7 @@
         "type": "https",
         "server": "dns.alidns.com",
         "path": "/dns-query",
-        "domain_resolver": "bootstrap"
-      },
-      {
-        "tag": "bootstrap",
-        "type": "udp",
-        "server": "223.5.5.5"
+        "domain_resolver": "hosts"
       },
       {
         "tag": "fakeip",
@@ -62,29 +65,24 @@
         "rules": [
           {
             "rule_set": "geosite-cn"
-          },
-          {
-            "rule_set": "geoip-cn"
           }
         ],
         "server": "Ali"
+      },
+      {
+        "rule_set": "geosite-geolocation-!cn",
+        "server": "Google"
       },
       {
         "query_type": [
           "A",
           "AAAA"
         ],
-        "rule_set": "geosite-geolocation-!cn",
         "server": "fakeip"
-      },
-      {
-        "rule_set": "geosite-geolocation-!cn",
-        "server": "Google"
       }
     ],
     "final": "Google",
-    "independent_cache": true,
-    "strategy": "ipv4_only"
+    "strategy": "prefer_ipv4"
   },
   "inbounds": [
     {
@@ -94,6 +92,13 @@
       "mtu": 1500,
       "auto_route": true,
       "strict_route": true,
+      "platform": {
+        "http_proxy": {
+          "enabled": true,
+          "server": "127.0.0.1",
+          "server_port": 7890
+        }
+      },
       "address": [
         "172.19.0.0/30",
         "fdfe:dcba:9876::0/126"
@@ -102,14 +107,7 @@
         "192.168.0.0/16",
         "10.0.0.0/8",
         "172.16.0.0/12"
-      ],
-      "platform": {
-        "http_proxy": {
-          "enabled": true,
-          "server": "127.0.0.1",
-          "server_port": 7890
-        }
-      }
+      ]
     },
     {
       "tag": "mixed",
