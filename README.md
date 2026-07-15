@@ -16,5 +16,3 @@ https://raw.githubusercontent.com/xream/scripts/main/surge/modules/sub-store-scr
   [SagerNet/sing-box](https://github.com/SagerNet/sing-box)
 
   [MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat)
-
-  [Toperlock/sing-box-subscribe](https://github.com/Toperlock/sing-box-subscribe)
