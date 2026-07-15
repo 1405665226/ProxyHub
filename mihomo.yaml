@@ -177,7 +177,8 @@ proxy-groups:
       interval: 300,
       tolerance: 50,
       include-all: true,
-      filter: "香港"
+      filter: "香港",
+      hidden: true
     }
   - {
       name: 🇺🇸 美国 🎯,
@@ -186,7 +187,8 @@ proxy-groups:
       interval: 300,
       tolerance: 50,
       include-all: true,
-      filter: "美国"
+      filter: "美国",
+      hidden: true
     }
   - {
       name: 🇯🇵 日本 🎯,
@@ -195,7 +197,8 @@ proxy-groups:
       interval: 300,
       tolerance: 50,
       include-all: true,
-      filter: "日本"
+      filter: "日本",
+      hidden: true
     }
   - {
       name: 🇰🇷 韩国 🎯,
@@ -204,7 +207,8 @@ proxy-groups:
       interval: 300,
       tolerance: 50,
       include-all: true,
-      filter: "韩国"
+      filter: "韩国",
+      hidden: true
     }
   - {
       name: 🇸🇬 新加坡 🎯,
@@ -213,7 +217,8 @@ proxy-groups:
       interval: 300,
       tolerance: 50,
       include-all: true,
-      filter: "新加坡"
+      filter: "新加坡",
+      hidden: true
     }
   - {
       name: 🇨🇳 台湾 🎯,
@@ -222,7 +227,8 @@ proxy-groups:
       interval: 300,
       tolerance: 50,
       include-all: true,
-      filter: "台湾"
+      filter: "台湾",
+      hidden: true
     }
 
 rules:
@@ -261,25 +267,25 @@ rule-providers:
     type: http
     behavior: domain
     interval: 86400
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ads-all.mrs"
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-ads-all.mrs"
     format: mrs
   geosite-cn:
     type: http
     behavior: domain
     interval: 86400
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cn.mrs"
     format: mrs
   geoip-cn:
     type: http
     behavior: ipcidr
     interval: 86400
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs"
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/cn.mrs"
     format: mrs
   geosite-geolocation-!cn:
     type: http
     behavior: domain
     interval: 86400
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs"
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/geolocation-!cn.mrs"
     format: mrs
   geosite-category-games:
     type: http
@@ -291,7 +297,7 @@ rule-providers:
     type: http
     behavior: domain
     interval: 86400
-    url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-games@cn.mrs"
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-games@cn.mrs"
     format: mrs
   geosite-category-games-!cn:
     type: http
@@ -303,7 +309,7 @@ rule-providers:
     type: http
     behavior: domain
     interval: 86400
-    url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-games-!cn@cn.mrs"
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-games-!cn@cn.mrs"
     format: mrs
   nvidia:
     type: http
