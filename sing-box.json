@@ -64,15 +64,15 @@
         "server": "Ali"
       },
       {
-        "rule_set": "geosite-geolocation-!cn",
-        "server": "Google"
-      },
-      {
         "query_type": [
           "A",
           "AAAA"
         ],
         "server": "fakeip"
+      },
+      {
+        "rule_set": "geosite-geolocation-!cn",
+        "server": "Google"
       }
     ],
     "independent_cache": true,
