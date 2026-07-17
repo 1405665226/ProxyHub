@@ -14,5 +14,3 @@ https://raw.githubusercontent.com/xream/scripts/main/surge/modules/sub-store-scr
   [MetaCubeX/mihomo](https://github.com/MetaCubeX/mihomo)
 
   [SagerNet/sing-box](https://github.com/SagerNet/sing-box)
-
-  [MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat)
