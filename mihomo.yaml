@@ -191,7 +191,7 @@ rules:
   - RULE-SET,nvidia,DIRECT
   - RULE-SET,steam,🎮 游戏
   - RULE-SET,xbox,🎮 游戏
-  - RULE-SET,microsoft,🚀 节点选择
+  - RULE-SET,microsoft,🎮 游戏
   - RULE-SET,ea,🎮 游戏
   - RULE-SET,epicgames,🎮 游戏
   - RULE-SET,geosite-category-ads-all,REJECT
