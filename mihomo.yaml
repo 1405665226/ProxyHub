@@ -124,105 +124,57 @@ proxy-groups:
     }
   - {
       name: 🇭🇰 香港,
-      type: select,
-      proxies: [🇭🇰 香港 🎯],
+      type: url-test,
+      url: https://www.gstatic.com/generate_204,
+      interval: 300,
+      tolerance: 50,
       include-all: true,
       filter: "香港"
     }
   - {
       name: 🇺🇸 美国,
-      type: select,
-      proxies: [🇺🇸 美国 🎯],
+      type: url-test,
+      url: https://www.gstatic.com/generate_204,
+      interval: 300,
+      tolerance: 50,
       include-all: true,
       filter: "美国"
     }
   - {
       name: 🇯🇵 日本,
-      type: select,
-      proxies: [🇯🇵 日本 🎯],
+      type: url-test,
+      url: https://www.gstatic.com/generate_204,
+      interval: 300,
+      tolerance: 50,
       include-all: true,
       filter: "日本"
     }
   - {
       name: 🇰🇷 韩国,
-      type: select,
-      proxies: [🇰🇷 韩国 🎯],
+      type: url-test,
+      url: https://www.gstatic.com/generate_204,
+      interval: 300,
+      tolerance: 50,
       include-all: true,
       filter: "韩国"
     }
   - {
       name: 🇸🇬 新加坡,
-      type: select,
-      proxies: [🇸🇬 新加坡 🎯],
+      type: url-test,
+      url: https://www.gstatic.com/generate_204,
+      interval: 300,
+      tolerance: 50,
       include-all: true,
       filter: "新加坡"
     }
   - {
       name: 🇨🇳 台湾,
-      type: select,
-      proxies: [🇨🇳 台湾 🎯],
+      type: url-test,
+      url: https://www.gstatic.com/generate_204,
+      interval: 300,
+      tolerance: 50,
       include-all: true,
       filter: "台湾"
-    }
-  - {
-      name: 🇭🇰 香港 🎯,
-      type: url-test,
-      url: https://www.gstatic.com/generate_204,
-      interval: 300,
-      tolerance: 50,
-      include-all: true,
-      filter: "香港",
-      hidden: true
-    }
-  - {
-      name: 🇺🇸 美国 🎯,
-      type: url-test,
-      url: https://www.gstatic.com/generate_204,
-      interval: 300,
-      tolerance: 50,
-      include-all: true,
-      filter: "美国",
-      hidden: true
-    }
-  - {
-      name: 🇯🇵 日本 🎯,
-      type: url-test,
-      url: https://www.gstatic.com/generate_204,
-      interval: 300,
-      tolerance: 50,
-      include-all: true,
-      filter: "日本",
-      hidden: true
-    }
-  - {
-      name: 🇰🇷 韩国 🎯,
-      type: url-test,
-      url: https://www.gstatic.com/generate_204,
-      interval: 300,
-      tolerance: 50,
-      include-all: true,
-      filter: "韩国",
-      hidden: true
-    }
-  - {
-      name: 🇸🇬 新加坡 🎯,
-      type: url-test,
-      url: https://www.gstatic.com/generate_204,
-      interval: 300,
-      tolerance: 50,
-      include-all: true,
-      filter: "新加坡",
-      hidden: true
-    }
-  - {
-      name: 🇨🇳 台湾 🎯,
-      type: url-test,
-      url: https://www.gstatic.com/generate_204,
-      interval: 300,
-      tolerance: 50,
-      include-all: true,
-      filter: "台湾",
-      hidden: true
     }
 
 rules:
